@@ -7,7 +7,7 @@ const routes = Object.entries(pages).map(([path, module]) => {
   const routePath = path
     .replace("./pages", "")
     .replace(".jsx", "")
-    .replace("/index", ""); // Handle index.jsx for root route
+    .replace("/index", "");
   return { path: routePath || "/", Component: module.default };
 });
 

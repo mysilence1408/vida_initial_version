@@ -27,11 +27,11 @@ const AnimatedTitle = ({ title, containerClass }) => {
           ease: "power2.inOut",
           stagger: 0.02,
         },
-        0
+        0,
       );
     }, containerRef);
 
-    return () => ctx.revert(); // Clean up on unmount
+    return () => ctx.revert();
   }, []);
 
   return (

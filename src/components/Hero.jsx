@@ -59,7 +59,7 @@ const Hero = () => {
     {
       dependencies: [currentIndex],
       revertOnUpdate: true,
-    }
+    },
   );
 
   useGSAP(() => {
@@ -86,7 +86,6 @@ const Hero = () => {
     <div className="relative h-dvh w-screen overflow-x-hidden">
       {loading && (
         <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
-          {/* https://uiverse.io/G4b413l/tidy-walrus-92 */}
           <div className="three-body">
             <div className="three-body__dot"></div>
             <div className="three-body__dot"></div>
@@ -130,7 +129,7 @@ const Hero = () => {
           />
           <video
             src={getVideoSrc(
-              currentIndex === totalVideos - 1 ? 1 : currentIndex
+              currentIndex === totalVideos - 1 ? 1 : currentIndex,
             )}
             autoPlay
             loop
